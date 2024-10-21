@@ -3,9 +3,11 @@
 This budget tracker will have the following features:
 
 ## Libraries:
-- Redux (for state management),
-- Router (For tracking each budget),
-- Tailwind (For CSS)
+- Redux (for state management), ✅
+- Router (For tracking each budget), ✅
+- Tailwind (For CSS), ✅
+
+## FOLDER STRUCTURE 
 
 ## User Data:
 - user
@@ -16,7 +18,10 @@ This budget tracker will have the following features:
 
 - money tracker
     - User can add their current cash on hand (initial funds...)
-    - User can add a specific expense or additionals to their expense
+
+    - User can add a specific expense or additionals to their expense, update expenses.
+        - (date, price of expense, details)
+    
     - App should compute the weekly, monthly, yearly average expense, income
 
 - api 

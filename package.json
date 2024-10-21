@@ -1,5 +1,5 @@
 {
-  "name": "money-button",
+  "name": "budget-tracker",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "json-server --watch data/public.json --port 8000 --delay 500"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.8",
