@@ -1,28 +1,19 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import Home from "./ui/Home";
-import Error from './ui/Error';
-import AppLayout from "./ui/AppLayout";
-import CreateUser from "./features/user/CreateUser";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router";
 
-  // Insert ROUTING here
-  const router = createBrowserRouter([{
-    element: <AppLayout/>,
-    errorElement: <Error />,
-    children: [
-      {
-        path: '/',
-        element: <Home/>
-      },
-      {
-        path: '/create-user',
-        element: <CreateUser/>
-      }
-    ]
-  }]);
+import AppLayout from "../src/ui/AppLayout";
+import Dashboard from "./budget-tracker/Dashboard";
 
-export default function App() {
-
+function App() {
   return (
-    <RouterProvider router={router} />      
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route element={<AppLayout />}>
+          <Route index element={<Navigate replace to="dashboard" />} />
+          <Route path="dashboard" element={<Dashboard />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
+
+export default App;
