@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-import { BrowserRouter, Navigate, Route, Routes } from "react-router";
-
-import AppLayout from "../src/ui/AppLayout";
-import Dashboard from "./budget-tracker/Dashboard";
-
-function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<AppLayout />}>
-          <Route index element={<Navigate replace to="dashboard" />} />
-          <Route path="dashboard" element={<Dashboard />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
-}
-
-export default App;
-=======
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Home from "./ui/Home";
 import Error from './ui/Error';
@@ -47,4 +26,3 @@ export default function App() {
     <RouterProvider router={router} />      
   )
 }
->>>>>>> 174b3a3de5ee87376ddccd0f20d476076a1cec1b
