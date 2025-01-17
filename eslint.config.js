@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import js from '@eslint/js'
 import globals from 'globals'
 import react from 'eslint-plugin-react'
@@ -37,28 +36,3 @@ export default [
     },
   },
 ]
-=======
-module.exports = {
-  root: true,
-  env: { browser: true, es2020: true },
-  extends: [
-    'eslint:recommended',
-    'react-app',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
-  ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh'],
-  rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
-    "react/no-unescaped-entities": 0,
-    "react/prop-types": "off" 
-  },
-}
->>>>>>> 174b3a3de5ee87376ddccd0f20d476076a1cec1b
